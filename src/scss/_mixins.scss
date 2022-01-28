@@ -1,3 +1,10 @@
+$breakpoints: (
+  'xs': 0,
+  's': 480px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200,
+);
 @mixin icon($image, $color) {
   background-color: #fff;
   background-image: url($image);
@@ -11,4 +18,36 @@
   box-shadow: inset 0px 5px 6px grey, 0px 8px darken($color, 15%),
     0px 0px 0px 50px rgba(#ffffff, 0.07), 0px 0px 0px 100px rgba(#ffffff, 0.05),
     0px 0px 0px 150px rgba(#ffffff, 0.025);
+}
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, 'xs')) {
+    @content;
+  }
+}
+@mixin s {
+  @media (min-width: map-get($breakpoints, 's')) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+
+@mixin breakpoints($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
 }

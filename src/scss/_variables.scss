@@ -18,3 +18,12 @@ $background-gradient: radial-gradient(
 $imageP: '../src/images/icon-paper.svg';
 $imageS: '../src/images/icon-scissors.svg';
 $imageR: '../src/images/icon-rock.svg';
+
+//breakpoints
+$breakpoints: (
+  'xs': 0,
+  's': 480px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200,
+);

@@ -44,7 +44,7 @@ const Game = ({ score, myChoice, setScore }) => {
       counter > 0
         ? setInterval(() => {
             setCounter(counter - 1);
-          }, 1000)
+          }, 300)
         : Result();
 
     return () => {
