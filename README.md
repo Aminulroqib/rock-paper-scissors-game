@@ -1,7 +1,6 @@
 # avipl-rock-paper-scissors
 
-Empty project.
-
+Live-Link: https://rps11.netlify.app/
 ## Building and running on localhost
 
 First install dependencies:
